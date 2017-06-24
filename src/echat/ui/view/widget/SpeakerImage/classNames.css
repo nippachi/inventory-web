@@ -1,8 +1,0 @@
-.Host {
-    display        : flex;
-    flex-direction : column;
-}
-
-.Host span {
-    flex-grow : 1;
-}

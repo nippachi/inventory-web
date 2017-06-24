@@ -2,10 +2,13 @@
 
 
 ## How to build
-### production
+#### node package install
+* npm install
+
+#### production
 * npm run postinstall:production
 
-### development
+#### development
 * npm run postinstall:development
 
 

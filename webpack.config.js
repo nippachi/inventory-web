@@ -6,7 +6,7 @@ module.exports = {
     "main.js": [
       "babel-polyfill",
       "whatwg-fetch",
-      "echat/main",
+      "ims/main",
     ]
   },
   module: {
@@ -61,17 +61,9 @@ module.exports = {
   plugins: [
     new DefinePlugin({
       "process.env.API_SERVER_DOMAIN"      : JSON.stringify(
+        // todo please write default api server url 
         process.env.API_SERVER_DOMAIN || "https://api.everychat81.com"
       ),
-      "process.env.NOTIFICATION_SERVER_DOMAIN" : JSON.stringify(
-        process.env.NOTIFICATION_SERVER_DOMAIN|| "wss://notification.everychat81.com"
-      ),
-      "process.env.MONITORING_SERVER_DOMAIN": JSON.stringify(
-        process.env.MONITORING_SERVER_DOMAIN || "wss://monitoring.everychat81.com"
-      ),
-      "process.env.VISITOR_SERVER_DOMAIN"   : JSON.stringify(
-        process.env.VISITOR_SERVER_DOMAIN || "https://visitor.everychat81.com"
-      )
     })
   ],
   output: {
