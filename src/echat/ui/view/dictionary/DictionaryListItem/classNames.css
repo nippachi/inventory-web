@@ -1,0 +1,91 @@
+.DictionaryListItem > * {
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  white-space   : nowrap;
+}
+
+.DictionaryListItem > :nth-child(n + 3) {
+  overflow  : hidden;
+  flex-grow : 1;
+}
+
+.DictionaryListItem > :nth-child(n + 2) {
+  margin-left : 8px;
+}
+
+.DictionaryListItem > :nth-child(1) {
+  display         : flex;
+  align-items     : center;
+  justify-content : space-around;
+  min-width       : 60px;
+  max-width       : 60px;
+  width           : 60px;
+}
+
+.DictionaryListItem > :nth-child(2) {
+  display         : flex;
+  align-items     : center;
+  justify-content : space-around;
+  min-width       : 42px;
+  max-width       : 42px;
+  width           : 64px;
+}
+
+.DictionaryListItem > :nth-child(3) {
+  min-width : 70px;
+  width     : 70px;
+}
+
+.DictionaryListItem > :nth-child(4) {
+  min-width : 100px;
+  width     : 200px;
+}
+
+.DictionaryListItem > :nth-child(5) {
+  min-width : 200px;
+  width     : 400px;
+}
+
+.DictionaryListItem > :nth-last-child(1) {
+  margin          : 0 20px;
+  min-width       : 40px;
+  max-width       : 40px;
+  width           : 40px;
+  text-align      : center;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  border-radius   : 8px;
+}
+
+.DictionaryWording {
+  max-height : calc(100% - 2px);
+}
+
+.DictionaryWording > pre {
+  font-family : Ruda, sans-serif;
+}
+
+.DictionaryWording:hover {
+  z-index          : 2;
+  position         : relative;
+  height           : 100%;
+  overflow         : auto;
+  text-overflow    : clip;
+  white-space      : normal;
+  background-color : white;
+  box-shadow       : 0 0 3px 1px rgba(0, 0, 0, 0.14), 0 0 2px 2px rgba(0, 0, 0, 0.098), 0 0 5px 1px rgba(0, 0, 0, 0.084);
+  transition       : all .3s ease-out;
+}
+
+@media (max-width : 767px) {
+  .DictionaryListItem > :nth-child(1) {
+    min-width : 20px;
+    max-width : 20px;
+    width     : 20px;
+  }
+
+  .DictionaryListItem > :nth-child(5) {
+    display : none;
+  }
+}

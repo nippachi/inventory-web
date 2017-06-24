@@ -1,0 +1,10 @@
+.Host {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-between;
+  margin          : 4px;
+}
+
+.Host > * {
+  flex-grow : 1;
+}

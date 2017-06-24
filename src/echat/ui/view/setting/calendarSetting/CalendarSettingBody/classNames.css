@@ -1,0 +1,18 @@
+.Host {
+  display        : flex;
+  flex-direction : column;
+}
+
+.Host > :nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  margin: 4px 50px;
+}
+
+.BusinessHours {
+  margin: 0 32px;
+}
+
+.Button {
+  max-width: 88px;
+}

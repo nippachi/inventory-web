@@ -1,0 +1,13 @@
+.Host {
+    overflow        : auto;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    z-index         : 1;
+    max-width       : calc(100vw - 16px);
+    min-width       : calc(56px * 5);
+    max-height      : calc(100vh - 16px);
+    margin          : 0 auto;
+    background-color: #FFF;
+    transition      : all .3s ease-out;
+}

@@ -1,0 +1,28 @@
+.Host {
+    display      : inline-block;
+    position     : relative;
+}
+
+.Host > :nth-child(1) {
+    box-sizing   : border-box;
+    padding-right: 16px;
+    padding-left : 24px;
+    cursor       : pointer;
+    transition   : all .3s ease-out;
+}
+
+.Host > :nth-child(1)::after {
+}
+
+.Host > :nth-child(2) {
+    top       : 0;
+    left      : 0;
+    box-sizing: border-box;
+    min-width : max-content;    
+}
+
+.Host > :nth-child(2) > * > :nth-child(1) {
+    box-sizing   : border-box;
+    padding-left : 24px;
+    padding-right: 16px;    
+}

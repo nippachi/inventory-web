@@ -1,0 +1,73 @@
+.OperatorListItem > * {
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  white-space   : nowrap;
+}
+
+.OperatorListItem > :nth-child(n + 3) {
+  overflow  : hidden;
+  flex-grow : 1;
+}
+
+.OperatorListItem > :nth-child(n + 2) {
+  margin-left : 8px;
+}
+
+.OperatorListItem > :nth-child(1) {
+  display         : flex;
+  align-items     : center;
+  justify-content : space-around;
+  min-width       : 60px;
+  max-width       : 60px;
+  width           : 60px;
+}
+
+.OperatorListItem > :nth-child(2) {
+  text-align      : center;
+  min-width       : 60px;
+  max-width       : 60px;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+}
+
+.OperatorListItem > :nth-child(3) {
+  min-width : 80px;
+  max-width : 200px;
+  width     : 100px;
+}
+
+.OperatorListItem > :nth-child(4) {
+  min-width : 200px;
+  width     : 250px;
+}
+
+.OperatorListItem > :nth-child(5) {
+  min-width : 200px;
+  width     : 250px;
+}
+
+.OperatorImage {
+  min-width  : 50px;
+  min-height : 50px;
+  width      : 50px;
+  height     : 50px;
+}
+
+@media (max-width : 767px) {
+  .OperatorListItem > :nth-child(1){
+    min-width : 20px;
+    max-width : 20px;
+    width     : 20px;
+  }
+
+  .OperatorListItem > :nth-child(2) {
+    min-width : 60px;
+    max-width : 60px;
+    width     : 60px;
+  }
+
+  .OperatorListItem > :nth-child(4) {
+    display : none;
+  }
+}

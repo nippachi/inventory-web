@@ -1,0 +1,23 @@
+.Host {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : flex-end;
+}
+
+.Host > :nth-child(2) {
+  flex-grow : 1;
+}
+
+.Host > :nth-child(3) {
+  position : relative;
+}
+
+.ChatWidget {
+  width            : min-content;
+  height           : min-content;
+  background-color : white;
+  position         : absolute;
+  bottom           : 0;
+  right            : 0;
+  box-shadow       : rgba(0, 0, 0, 0.1) 0px -1px 5px 3px;
+}

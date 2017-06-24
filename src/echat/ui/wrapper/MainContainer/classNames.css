@@ -1,0 +1,180 @@
+.Host {
+  display        : flex;
+  flex-direction : column;
+  align-items    : stretch;
+  max-width      : 100%;
+  max-height     : 100%;
+  width          : 100vw;
+  height         : 100vh;
+}
+
+.Host > :nth-child(1) {
+  z-index  : 1;
+  position : relative;
+}
+
+.Host > :nth-child(2) {
+  display        : flex;
+  flex-direction : row;
+  flex-grow      : 1;
+  align-items    : stretch;
+  z-index        : 0;
+  position       : relative;
+}
+
+.Content {
+  height : 100%;
+}
+
+.Content > :nth-child(2) {
+  z-index   : 0;
+  position  : relative;
+  flex-grow : 1;
+}
+
+.NavigationBar {
+  background-color : #f2f2f2;
+  z-index  : 1;
+  position : relative;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .NavigationBar {
+    position : fixed;
+  }
+}
+
+.HideNavigationBar,
+.ShowNavigationBar {
+  width      : 224px;
+  max-width  : 224px;
+  min-width  : 224px;
+  transition : all .3s ease-out;
+}
+
+.HideNavigationBar {
+  margin-left : -224px;
+}
+
+.ShowNavigationBar {
+  margin-left : 0;
+}
+
+.Main {
+  overflow : auto;
+}
+
+.ChatContent {
+  position : fixed;
+  bottom   : 0;
+}
+
+.WidgetWrapper {
+  position        : fixed;
+  bottom          : 0;
+  right           : 100px;
+  z-index         : 1;
+  transition      : all .3s ease-out;
+  color           : transparent;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : center;
+  align-items     : flex-end;
+  width           : min-content;
+  height          : min-content;
+}
+
+.ChatWidget {
+  width      : 280px;
+  height     : 400px;
+  margin     : 12px 10px 0 12px;
+  box-shadow : rgba(0, 0, 0, 0.1) 0px 2px 7px 5px;
+}
+
+.FABWrapper {
+  margin          : 20px;
+  position        : fixed;
+  bottom          : 0;
+  right           : 0;
+  z-index         : 1;
+  transition      : all .3s ease-out;
+  color           : transparent;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : center;
+}
+
+.FAB {
+  transition      : all .3s ease-out;
+  border-radius   : 50%;
+  color           : #FFF;
+  cursor          : pointer;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+}
+
+.MainFAB {
+  margin           : 8px;
+  min-width        : 56px;
+  min-height       : 56px;
+  background-color : #09F;
+  font-size        : 36px;
+}
+
+.HiddenRoomFAB {
+  transition : all .2s ease-out;
+  width      : 0px;
+  height     : 0px;
+  max-width  : 0px;
+  max-height : 0px;
+  font-size  : 0px;
+}
+
+.ViewRoomFAB {
+  transition : all .2s ease-out;
+  width      : 40px;
+  height     : 40px;
+  max-width  : 40px;
+  max-height : 40px;
+  font-size  : 26px;
+}
+
+.RoomFAB {
+  transition : all .3s ease-out;
+  margin     : 8px;
+}
+
+.DisableRoomFAB {
+  transition       : all .3s ease-out;
+  background-color : ghostwhite;
+  color            : black;
+}
+
+.ActiveRoomFAB {
+  transition       : all .3s ease-out;
+  background-color : rgb(255, 82, 82);
+  color            : white;
+}
+
+.FABVisitorName {
+  font-size : 18px;
+}
+
+.FABIcon {
+  transition : all .3s ease-out;
+  transform  : rotate(0);
+  font-size: 24px;
+}
+
+.LockFABIcon {
+  transition : all .3s ease-out;
+  transform  : rotate(360deg);
+  font-size: 24px;
+}
+
+.Audio {
+  display : none;
+}

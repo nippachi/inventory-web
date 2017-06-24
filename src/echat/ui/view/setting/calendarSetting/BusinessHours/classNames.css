@@ -1,0 +1,32 @@
+.Host {
+  display     : flex;
+  align-items : center;
+  width       : 100%;
+}
+
+.Host > :nth-child(2) {
+  margin :0 14px
+}
+
+.BusinessHours {
+  display     : flex;
+  align-items : center;
+  margin: 6px 12px;
+  width       : 100%;
+}
+
+.Time {
+  display : flex;
+}
+
+.Time > * {
+  text-align : center;
+  margin     : 0 5px;
+  width      : 32px;
+}
+
+.DayOfTheWeek {
+  font-size   : 16px;
+  margin      : 0 18px;
+  white-space : nowrap;
+}

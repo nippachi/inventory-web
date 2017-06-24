@@ -1,0 +1,10 @@
+.DialogForm {
+    overflow   : auto;
+    max-width: 600px;
+}
+
+.ImageInput {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}

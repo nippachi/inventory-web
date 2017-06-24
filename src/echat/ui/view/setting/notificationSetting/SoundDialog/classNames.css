@@ -1,0 +1,17 @@
+.Host {
+  min-height : 320px;
+  max-height : 320px;
+  overflow   : scroll;
+  cursor: pointer;
+}
+
+.SoundItem {
+  cursor     : pointer;
+  transition : all .3s ease-out;
+  display: flex;
+  align-items: center;
+}
+
+.Audio {
+  display : none;
+}

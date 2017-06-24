@@ -1,0 +1,18 @@
+.PageHeader {
+  display       : flex;
+  margin        : 8px 16px 18px 16px;
+  align-items   : center;
+  text-overflow : ellipsis;
+}
+
+.PageHeader > h1 {
+  display        : inline-block;
+  vertical-align : bottom;
+  white-space    : nowrap
+}
+
+.PageHeader > p {
+  display        : inline-block;
+  vertical-align : bottom;
+  margin-left    : 8px
+}

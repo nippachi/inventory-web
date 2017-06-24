@@ -1,0 +1,16 @@
+.Host {
+    margin: 8px 16px;
+}
+
+.Host > * {
+    margin : 0;
+    padding: 0;
+}
+
+.Host > :nth-child(1) {
+}
+
+.Host > :nth-child(2) {
+    color    : #777;
+    font-size: .875px;
+}

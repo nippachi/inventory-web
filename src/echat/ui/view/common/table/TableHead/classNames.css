@@ -1,0 +1,6 @@
+.TableHead {
+    display        : flex;
+    flex-direction : column;
+    min-height     : 56px;
+    margin         : 0 10px;
+}

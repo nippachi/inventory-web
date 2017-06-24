@@ -1,0 +1,20 @@
+.Host {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : flex-start;
+  align-items     : flex-start;
+}
+
+.Label {
+  text-overflow : ellipsis;
+  white-space   : nowrap;
+  font-size     : 10px;
+  color         : #546E7A;
+}
+
+.Value {
+  text-overflow : ellipsis;
+  white-space   : nowrap;
+  font-size     : 12px;
+  color         : #223;
+}

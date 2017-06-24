@@ -1,0 +1,145 @@
+.Header {
+  display          : flex;
+  flex-direction   : row;
+  align-items      : center;
+  min-height       : max-content;
+  background-color : #09F;
+  color            : #FFF;
+}
+
+.AppBarLogo {
+  margin              : 8px;
+  width               : 120px;
+  height              : 40px;
+  background-image    : url(/img/everychat81-logo.svg);
+  background-size     : contain;
+  background-position : center;
+  background-repeat   : no-repeat;
+}
+
+.LeftSide,
+.RightSide {
+  display     : flex;
+  flex-grow   : 1;
+  align-items : center;
+}
+
+.RightSide {
+  margin-right    : 12px;
+  justify-content : flex-end;
+}
+
+.NavigationBar {
+  background-color : #f4f4f4;
+}
+
+.HideNavigationBar,
+.ShowNavigationBar {
+  width      : 224px;
+  max-width  : 224px;
+  min-width  : 224px;
+  transition : all .3s ease-out;
+}
+
+.HideNavigationBar {
+  margin-left : -224px;
+}
+
+.ShowNavigationBar {
+  margin-left : 0;
+}
+
+.IconContainer {
+  position    : relative;
+  margin-left : 12px;
+  cursor      : pointer;
+}
+
+.IconContainer > * {
+  border-radius : 18px;
+  padding       : 6px;
+  display       : inline-block;
+  height        : 24px;
+  min-width     : 24px;
+  line-height   : 24px;
+  font-size     : 20px;
+  text-align    : center;
+}
+
+.IconContainer > :nth-child(n+2) {
+  position : absolute;
+  top      : 0;
+  left     : 0;
+}
+
+.ShowNavigationIcon,
+.HideNavigationIcon {
+  transition : all .3s ease-out;
+}
+
+.ShowNavigationIcon {
+  opacity : 1;
+}
+
+.HideNavigationIcon {
+  opacity : 0;
+}
+
+.Main {
+  overflow : auto;
+}
+
+.OperatorImg {
+  width  : 80px;
+  height : 80px;
+}
+
+.Popup {
+  display          : flex;
+  flex-direction   : column;
+  top              : 58px;
+  right            : 12px;
+  background-color : white;
+}
+
+.Profile {
+  margin           : 2px;
+  background-color : white;
+  display          : flex;
+  flex-direction   : row;
+  align-items      : stretch;
+}
+
+.Profile > :nth-child(1) {
+  border        : solid 1px #28a5a5;
+  margin        : 4px;
+  width         : 80px;
+  height        : 80px;
+  position      : relative;
+  border-radius : 50%;
+  overflow      : hidden;
+}
+
+.Profile > :nth-child(2) {
+  margin         : 0 8px;
+  color          : black;
+  display        : flex;
+  flex-direction : column;
+}
+
+.Profile > :nth-child(2) > span {
+  font-size : 13px;
+}
+
+.ProfileName {
+  font-weight : bold;
+}
+
+.SelectBox {
+  width : 88px;
+}
+
+.DehazeIcon {
+  color: white;
+  font-size: 28px;
+}

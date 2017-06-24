@@ -1,0 +1,25 @@
+.Host {
+  display       : flex;
+  align-items   : center;
+  cursor        : pointer;
+  padding       : 4px 8px;
+  border-radius : 2px;
+  transition    : all .3s ease-out;
+}
+
+.Host:hover {
+  background-color : rgba(0, 0, 0, .05);
+}
+
+.Host > :nth-child(1) {
+  font-size : 14px;
+  width     : 260px;
+  margin    : 4px 0px;
+  color     : #777
+}
+
+.Host > :nth-child(2) {
+  font-size : 16px;
+  color     : rgba(0, 0, 0, .87);
+
+}

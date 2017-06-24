@@ -1,0 +1,122 @@
+.Host {
+  background-color : #FFF;
+  color            : rgba(0, 0, 0, .87);
+  font-size        : 15px;
+  transition       : all .3s ease-out;
+  border-top       : 0 solid rgba(0, 0, 0, .12);
+  margin-left      : 12px;
+  margin-right     : 12px;
+}
+
+.Host:nth-child(1) {
+  border-top-left-radius  : 2px;
+  border-top-right-radius : 2px;
+}
+
+.Host:nth-last-child(1) {
+  border-bottom-left-radius  : 2px;
+  border-bottom-right-radius : 2px;
+}
+
+.Host.Selected {
+  border-radius : 2px;
+}
+
+.Host.Selected:not(:nth-child(1)) {
+  margin-top   : 16px;
+  margin-left  : 0;
+  margin-right : 0;
+}
+
+.Host.Selected:not(:nth-last-child(1)) {
+  margin-bottom : 16px;
+  margin-left   : 0;
+  margin-right  : 0;
+}
+
+.Host:not(.Selected) + .Host:not(.Selected) {
+  border-top-width : 1px;
+}
+
+.Host.Selected > :nth-child(1) {
+  min-height       : 72px;
+  /*background-color : #FF6D00;*/
+  background-color : #0277BD;
+  position         : relative;
+}
+
+.Host.Selected > :nth-child(1):after {
+  background-color : inherit;
+  bottom           : -40px;
+  content          : " ";
+  font-size        : 0;
+  height           : 40px;
+  left             : 0;
+  position         : absolute;
+  right            : 0;
+}
+
+.Host > :nth-child(1) {
+  display     : flex;
+  align-items : center;
+  min-height  : 48px;
+  transition  : all .3s ease-out;
+  z-index     : 0;
+}
+
+.Host:not(.Disabled) > :nth-child(1) {
+  cursor : pointer;
+}
+
+.Host:not(.Disabled):not(.Selected):hover > :nth-child(1) {
+  background-color : rgba(0, 0, 0, .05);
+}
+
+.Host > :nth-child(1) > :nth-child(1) {
+  white-space : nowrap;
+  transition  : all .3s ease-out;
+}
+
+.Host.Selected > :nth-child(1) > :nth-child(1) {
+  font-size : 24px;
+  color     : white;
+  padding   : 0 28px;
+}
+
+.Host.Selected > :nth-child(1) > :nth-child(2) {
+  color     : white;
+  font-size : 18px;
+}
+
+.Host > :nth-child(1) > :nth-child(2) {
+  overflow      : hidden;
+  flex-grow     : 1;
+  font-size     : 12px;
+  color         : black;
+  text-overflow : ellipsis;
+  white-space   : nowrap;
+}
+
+.Host > :nth-child(1) > :not(:nth-child(2)) {
+  padding : 0 16px;
+}
+
+.Host > :nth-child(2) {
+  overflow   : hidden;
+  transition : all .3s ease-out;
+  z-index    : 1;
+}
+
+.Host > :nth-child(2) > * {
+  padding-left   : 12px;
+  padding-right  : 12px;
+  padding-bottom : 12px;
+}
+
+.VisitorInformation {
+  display : flex;
+}
+
+.VisitorInformation > :nth-child(n+2) {
+  margin : 0 6px;
+}

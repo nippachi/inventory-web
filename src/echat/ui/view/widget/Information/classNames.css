@@ -1,0 +1,28 @@
+.Host {
+  min-height       : 70px;
+  width            : 100%;
+  display          : flex;
+  position         : relative;
+  flex-direction   : row;
+  z-index          : 1;
+  justify-content  : center;
+  align-items      : center;
+  background-color : white;
+}
+
+.Host > :nth-child(1) {
+  margin    : 0 6px;
+  flex-grow : 1;
+}
+
+.Host > :nth-child(2) {
+  margin    : 0 6px;
+  flex-grow : 1;
+}
+
+.CountDatum {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-between;
+  align-items     : flex-start;
+}

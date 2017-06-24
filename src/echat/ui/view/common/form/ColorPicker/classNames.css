@@ -1,0 +1,65 @@
+.ColorPicker {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+
+.Color {
+    width         : 72px;
+    height        : 18px;
+    border-radius : 2px;
+    background    : lightyellow;
+}
+
+.Swatch {
+    padding         : 5px;
+    background      : #fff;
+    border-radius   : 1px;
+    box-shadow      : 0 0 0 1px rgba(0, 0, 0, .1);
+    display         : inline-block;
+    align-items     : center;
+    justify-content : center;
+    cursor          : pointer;
+    position        : relative;
+    margin          : 0 18px;
+}
+
+.Label {
+    width     : max-content;
+    font-size : 16px;
+    margin    : 12px;
+}
+
+.Popover {
+    z-index  : 2;
+    right    : 0;
+    position : absolute;
+}
+
+.View {
+    position: relative;
+}
+
+.PopoverTop {
+    top : 32px;
+}
+
+.PopoverBottom {
+    bottom : 32px;
+}
+
+.Cover {
+    position : fixed;
+    top      : 0;
+    right    : 0;
+    bottom   : 0;
+    left     : 0;
+}
+
+.SketchPicker {
+    position : relative;
+}
+
+.Input {
+    display : none;
+}

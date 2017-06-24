@@ -1,0 +1,69 @@
+.Host {
+  width  : 100%;
+  height : 100%;
+}
+
+.Host > :nth-child(2) {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-between;
+}
+
+.Name {
+  display        : flex;
+  align-items    : center;
+  padding-bottom : 4px;
+  border-bottom  : 1px solid #bbb;
+  margin         : 8px 12px;
+}
+
+.Name > :nth-child(1) {
+  font-size : 20px;
+  color     : #777;
+  min-width : 120px;
+}
+
+.Name > :nth-child(2) {
+  font-size : 32px;
+  color     : #555;
+}
+
+.List > li {
+  display     : flex;
+  align-items : flex-end;
+  margin      : 3px 0;
+}
+
+.List {
+  margin: 0 12px;
+}
+
+.List:nth-child(1) {
+  flex-grow : 1;
+  min-width : 320px;
+}
+
+.List:nth-child(2) {
+  min-width : 300px;
+}
+
+.List > li > :nth-child(1) {
+  font-size : 14px;
+  min-width : 120px;
+  color     : #777;
+}
+
+.List > li > :nth-child(2) {
+  font-size   : 16px;
+  margin      : auto 4px;
+  color       : #555;
+  white-space : nowrap;
+}
+
+.UserAgent {
+  border-top  : 1px solid #bbb;
+  padding-top : 6px;
+  color       : #444;
+  width       : 280px;
+  margin      : 6px;
+}

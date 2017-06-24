@@ -1,0 +1,9 @@
+.ToolBar {
+    width            : 100%;
+    display          : flex;
+    flex-direction   : row;
+    align-items      : stretch;
+    justify-content  : space-between;
+    background-color : #f4f4f4;
+    min-height       : max-content;
+}

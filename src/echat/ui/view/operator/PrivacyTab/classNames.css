@@ -1,0 +1,88 @@
+.Privacy {
+    display         : flex;
+    justify-content : flex-start;
+    align-items     : center;
+    margin          : 40px 10%;
+}
+
+.Privacy > :nth-child(1) {
+    margin        : 10px;
+    width         : 140px;
+    height        : 140px;
+    position      : relative;
+    border-radius : 50%;
+    overflow      : hidden;
+}
+
+.Privacy > :nth-child(2) {
+    margin          : 10px 20px;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+
+}
+
+.OperatorImg {
+    border : solid 1px #28a5a5;
+    width  : 140px;
+    height : 140px;
+}
+
+.OperatorImgText {
+    display          : flex;
+    align-items      : center;
+    justify-content  : center;
+    position         : absolute;
+    bottom           : 0;
+    width            : 100%;
+    height           : 35px;
+    text-align       : center;
+    background-color : rgba(0, 0, 0, 0.5);
+    font-size        : 18px;
+    transition       : all .3s ease-out;
+}
+
+*:hover > .OperatorImgText {
+    background-color : rgba(0, 0, 0, 0.5);
+    font-size        : 32px;
+    height           : 100%;
+}
+
+.ProfileText {
+    margin : 8px 0;
+}
+
+.ProfileText > :nth-child(1) {
+    font-size : 12px;
+}
+
+.ProfileText > :nth-child(2) {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : flex-start;
+    font-size       : 22px;
+}
+
+.OperatorGroup {
+
+}
+
+.DialogForm {
+    min-width  : 50vw;
+    max-width  : calc(100vw - 16px);
+    max-height : calc(100vh - 16px);
+    overflow   : auto;
+}
+
+.DialogForm > :nth-child(1) {
+    display        : flex;
+    flex-direction : column;
+    margin         : 24px;
+}
+
+.DialogForm > :nth-child(2) {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : flex-end;
+    margin          : 8px;
+}

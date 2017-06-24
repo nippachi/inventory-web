@@ -1,0 +1,76 @@
+.OperatorImg {
+  background-color : white;
+  border           : solid 1px #28a5a5;
+  margin           : 0 4px;
+  width            : 40px;
+  height           : 40px;
+  border-radius    : 50%;
+}
+
+.Name {
+  color         : white;
+  font-size     : 15px;
+  text-overflow : ellipsis;
+}
+
+.State {
+  color      : white;
+  font-size  : 10px;
+  text-align : right;
+}
+
+.presenceStatus {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  position        : relative;
+}
+
+.statusIcon {
+  background-color : #09F;
+  position         : absolute;
+  border-radius    : 50%;
+  max-height       : 18px;
+  right            : 0;
+  bottom           : -3px;
+}
+
+.statusIcon > span {
+  display          : block;
+  background-color : transparent;
+  padding          : 3px;
+  border-radius    : 50%;
+}
+
+.Host:hover .statusIcon > span {
+  background-color : rgba(0, 0, 0, 0.2);
+}
+
+.OnLine > span::after {
+  background-color : #7FBA00;
+  transition       : all .3s ease;
+}
+
+.OffLine > span::after {
+  background-color : #FFF176;
+  transition       : all .3s ease;
+}
+
+.statusIcon > span::after {
+  display       : block;
+  border-radius : 50%;
+  content       : "";
+  height        : 12px;
+  width         : 12px;
+}
+
+@media (max-width : 767px) {
+  .Host {
+    border-radius : 50%;
+    min-width     : 0;
+  }
+
+  .Host > :nth-child(1) {
+    display : none;
+  }
+}

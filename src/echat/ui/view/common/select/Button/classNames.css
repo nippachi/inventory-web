@@ -1,0 +1,24 @@
+.Button {
+    text-align      : center;
+    color           : rgba(0, 0, 0, .7);
+    text-decoration : none;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    justify-content : space-around;
+    cursor          : pointer;
+}
+
+.Button:hover {
+    color            : black;
+    background-color : rgba(0, 0, 0, .1);
+}
+
+.FontAwesomeIcon {
+    margin : 4px;
+    color  : rgba(0, 0, 0, .2);
+}
+
+*:hover > .FontAwesomeIcon {
+    color : black;
+}

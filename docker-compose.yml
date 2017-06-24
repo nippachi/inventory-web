@@ -1,0 +1,10 @@
+version: "2"
+services:
+  every-chat:
+    image: node
+    command: npm start
+    ports:
+      - 3000
+    volumes:
+      - ./:/opt/every-chat
+    working_dir: /opt/every-chat

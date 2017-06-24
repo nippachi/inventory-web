@@ -1,0 +1,84 @@
+.VisitorListItem {
+  cursor : pointer;
+  height : 54px;
+  border-left   : 3px solid transparent;
+}
+
+.VisitorListItem:hover {
+  background-color : rgba(0, 0, 0, .05);
+}
+
+.VisitorListItem > * {
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  white-space   : nowrap;
+}
+
+.VisitorListItem > :nth-child(n + 3) {
+  overflow   : hidden;
+  flex-grow  : 1;
+  text-align : left;
+}
+
+.VisitorListItem > :nth-child(n + 2) {
+  margin-left : 8px;
+}
+
+.VisitorListItem > :nth-child(1) {
+  display         : flex;
+  align-items     : center;
+  justify-content : space-around;
+  min-width       : 120px;
+  max-width       : 120px;
+  width           : 120px;
+}
+
+.VisitorListItem > :nth-child(2) {
+  text-align : center;
+  min-width  : 42px;
+  max-width  : 42px;
+  width      : 42px;
+}
+
+.VisitorListItem > :nth-child(3) {
+  min-width : 55px;
+  max-width : 60px;
+}
+
+.VisitorListItem > :nth-child(4) {
+  min-width : 70px;
+  width     : 70px;
+}
+
+.VisitorListItem > :nth-child(5) {
+  min-width : 100px;
+  width     : 200px;
+}
+
+.VisitorListItem > :nth-child(6) {
+  display         : flex;
+  align-items     : center;
+  justify-content : space-around;
+  min-width       : 65px;
+  max-width       : 65px;
+}
+
+.VisitorListItem > :nth-child(7) {
+  display         : flex;
+  align-items     : center;
+  justify-content : space-around;
+  min-width       : 65px;
+  max-width       : 65px;
+}
+
+
+@media (max-width : 767px) {
+  .VisitorListItem > :nth-child(4),
+  .VisitorListItem > :nth-child(2) {
+    display : none;
+  }
+
+  .VisitorListItem > :nth-child(6),
+  .VisitorListItem > :nth-child(6) {
+  }
+}

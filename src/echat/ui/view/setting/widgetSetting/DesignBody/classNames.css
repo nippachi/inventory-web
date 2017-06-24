@@ -1,0 +1,31 @@
+.DesignPage {
+    display         : flex;
+    align-items     : flex-start;
+}
+
+.DesignPage > :nth-child(1) {
+    flex-grow: 1;
+    margin: 18px;
+}
+
+.DesignPage > :nth-child(2) {
+    min-height : 140px;
+    min-width  : 140px;
+    max-height: 140px;
+    max-width: 140px;
+    margin: 18px;
+}
+
+.ImageInput {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+.ColorView > *::after {
+    content     : '\F040';
+    display     : inline-block;
+    font-family : "FontAwesome";
+    text-align  : center;
+    user-select : none;
+}

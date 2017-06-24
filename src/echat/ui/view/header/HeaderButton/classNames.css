@@ -1,0 +1,19 @@
+. HeaderButton {
+    text-align      : center;
+    color           : white;
+    text-decoration : none;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    justify-content : center;
+    cursor          : pointer;
+    min-height      : 44px;
+}
+
+.HeaderButton:hover {
+    background-color : rgba(0, 0, 0, 0.20);
+}
+
+.FontAwesomeIcon {
+    margin : 4px;
+}
