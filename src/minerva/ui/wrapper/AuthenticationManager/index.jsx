@@ -1,9 +1,9 @@
-let config      = require("ims-common/config");
-let deleteToken = require("ims-common/api/auth/deleteToken");
-let apply       = require("ims/apply");
-let React       = require("react");
+import config      from "minerva-common/config"
+import deleteToken from "minerva-common/api/auth/deleteToken"
+import apply       from "minerva/apply"
+import React       from "react"
 
-module.exports = class extends React.Component {
+export default class extends React.Component {
     componentWillMount() {
         this.setState({
             store: undefined
@@ -56,7 +56,7 @@ module.exports = class extends React.Component {
                     onLogOut: async() => {
                         try {
                             await deleteToken({
-                                apiHost  : config["ims_api_host"],
+                                apiHost  : config["minerva_api_host"],
                                 token    : apply(this.state.store, "token"),
                                 tokenType: apply(this.state.store, "tokenType")
                             })

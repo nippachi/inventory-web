@@ -1,8 +1,8 @@
-let config     = require("echat-common/config");
-let toFormData = require("echat-common/api/encoding/toFormData");
-let toURIQuery = require("echat-common/api/encoding/toURIQuery");
-let Model      = require("echat-common/model/Model");
-module.exports = class Account extends Model {
+import config     from "minerva-common/config"
+import toFormData from "minerva-common/api/encoding/toFormData"
+import toURIQuery from "minerva-common/api/encoding/toURIQuery"
+import Model      from "minerva-common/model/Model"
+export default class Account extends Model {
   constructor(
     {
       id,
@@ -86,7 +86,7 @@ module.exports = class Account extends Model {
       query
     }
   ) {
-    let url = config["echat_api_host"] + "/accounts/" + accountId;
+    let url = config["minerva_api_host"] + "/accounts/" + accountId;
 
     let response = await fetch(
       url,
@@ -130,7 +130,7 @@ module.exports = class Account extends Model {
       }
     }
   ) {
-    let url      = config["echat_api_host"] + "/accounts/" + accountId;
+    let url      = config["minerva_api_host"] + "/accounts/" + accountId;
     let response = await fetch(
       url,
       {

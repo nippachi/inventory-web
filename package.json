@@ -1,5 +1,5 @@
 {
-  "name": "ims",
+  "name": "Minerva",
   "version": "1.0.0",
   "scripts": {
     "postinstall": "npm run postinstall:production",

@@ -1,11 +1,11 @@
-let LoginPage                 = require("ims/ui/view/auth/LoginPage");
-let HomePage                  = require("ims/ui/view/home/HomePage")
-let AuthenticationManager     = require("ims/ui/wrapper/AuthenticationManager");
-let MainContainer             = require("ims/ui/wrapper/MainContainer");
-let React                     = require("react");
-let {Router}                  = require("react-router");
-let {Route}                   = require("react-router");
-let {browserHistory}          = require("react-router");
+import LoginPage                 from "minerva/ui/view/auth/LoginPage"
+let HomePage                  = require("minerva/ui/view/home/HomePage")
+import AuthenticationManager     from "minerva/ui/wrapper/AuthenticationManager"
+import MainContainer             from "minerva/ui/wrapper/MainContainer"
+import React                     from "react"
+import {Router}                  from "react-router"
+import {Route}                   from "react-router"
+import {browserHistory}          from "react-router"
 
 
 let Root = props =>
@@ -13,7 +13,7 @@ let Root = props =>
             {...props}
         />
 
-module.exports = (props) =>
+export default (props) =>
     <Router
         {... props}
         history={browserHistory}

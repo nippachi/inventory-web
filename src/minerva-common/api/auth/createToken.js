@@ -1,7 +1,7 @@
-let toFormData = require("ims-common/api/encoding/toFormData");
+import toFormData from "minerva-common/api/encoding/toFormData"
 let sha3_512 = require('js-sha3').sha3_512;
 
-module.exports = async({
+export default async({
   apiHost,
   email,
   password

@@ -1,4 +1,4 @@
-module.exports = a => {
+export default a => {
   let b = new FormData();
 
   for (let i in a)

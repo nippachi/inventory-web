@@ -1,6 +1,6 @@
 let React = require("react")
 
-module.exports = ({
+export default ({
     ...props
 }) => 
     <div

@@ -1,10 +1,10 @@
-let React       = require("react");
-let config      = require("ims-common/config");
-let createToken = require("ims-common/api/auth/createToken");
+import React       from "react"
+import config      from "minerva-common/config"
+import createToken from "minerva-common/api/auth/createToken"
 
-const classNames = require("ims/ui/view/auth/LoginPage/classNames");
+const classNames = require("minerva/ui/view/auth/LoginPage/classNames");
 
-module.exports = class extends React.Component {
+export default class extends React.Component {
     componentWillMount() {
         this.setState(
             {
@@ -41,7 +41,7 @@ module.exports = class extends React.Component {
                                 try {
                                     this.setState({isSending: true});
                                     let credential = await createToken({
-                                        apiHost : config["ims_api_host"],
+                                        apiHost : config["minerva_api_host"],
                                         email   : form.querySelector("*[name='email']").value,
                                         password: form.querySelector("*[name='password']").value
                                     });

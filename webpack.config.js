@@ -1,12 +1,12 @@
-let {DefinePlugin} = require("webpack");
-let path           = require("path");
+const { DefinePlugin } = require("webpack")
+const path          = require("path")
 
 module.exports = {
   entry: {
     "main.js": [
       "babel-polyfill",
       "whatwg-fetch",
-      "ims/main",
+      "minerva/main",
     ]
   },
   module: {

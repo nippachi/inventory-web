@@ -1,9 +1,9 @@
-let React             = require("react");
-let ReactDOM          = require("react-dom");
+import React             from "react"
+import ReactDOM          from "react-dom"
 
-let classNames = require("ims/ui/wrapper/MainContainer/classNames");
+import classNames from "minerva/ui/wrapper/MainContainer/classNames"
 
-module.exports = class extends React.Component {
+export default class extends React.Component {
     componentWillMount() {
         this.setState({
         })

@@ -1,4 +1,4 @@
-let historyApiFallback = require('connect-history-api-fallback');
+const historyApiFallback = require('connect-history-api-fallback')
 
 module.exports = {
     middleware: [historyApiFallback()],
